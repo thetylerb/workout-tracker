@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
-
 const Schema = mongoose.Schema;
-
-const exerciseModel = require('./exercise')
-
+const exerciseModel = require('./Exercise')
 const workoutSchema = new Schema({
     day: Date,
     exercises: [exerciseModel.Schema]

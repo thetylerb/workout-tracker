@@ -12,10 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.17.1",
     "mongo": "^0.1.0",
-    "mongoose": "^5.3.16",
-    "morgan": "^1.9.1"
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.17",
+    "morgan": "^1.10.0"
   },
   "repository": {
     "type": "git",

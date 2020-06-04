@@ -2,5 +2,5 @@ const exerciseModule= require("./Exercise")
 
 module.exports = {
   Exercise: exerciseModule.model,
-  Workout: require("./Workout")
+  Workout: require("./workout")
 };
