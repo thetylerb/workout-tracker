@@ -1,6 +1,6 @@
-const exerciseModule= require("./Exercise")
+const exerciseModel = require('./exercise');
 
 module.exports = {
-  Exercise: exerciseModule.model,
-  Workout: require("./workout")
-};
+    Workout: require('./workout'),
+    Exercise: exerciseModel.model
+}

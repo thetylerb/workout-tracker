@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const db = require('./models')
 const PORT = process.env.PORT || 3001;
-
 const app = express();
 
 app.use(morgan('dev'));
@@ -38,8 +37,7 @@ app.get("/", (req, res) => {
 app.get('/api/workouts', (req, res) => {
     db.Workout.find({}).then(Workout => {
         res.json(Workout);
-    })
-    .catch(error => {
+    }).catch(error => {
         res.json(error);
     });
 });
@@ -47,8 +45,7 @@ app.get('/api/workouts', (req, res) => {
 app.get('/api/wourkouts/:id', (req, res) => {
     db.Workout.findOne({_id: req.params.id}).then(Workout => {
         res.json(Workout);
-    })
-    .catch(error => {
+    }).catch(error => {
         res.json(error)
     })
 })
@@ -56,8 +53,7 @@ app.get('/api/wourkouts/:id', (req, res) => {
 app.get('/api/workouts/range', (req, res) => {
     db.Workout.find({}).then(Workout => {
         res.json(Workout);
-    })
-    .catch(error => {
+    }).catch(error => {
         res.json(error);
     });
 });
@@ -67,8 +63,7 @@ app.post("/api/workouts", ({ body }, res)=> {
     body.exercises = []
     db.Workout.create(body).then(Workout => {
         res.json(Workout);
-    })
-    .catch(error => {
+    }).catch(error => {
         res.json(error);
     });
 });
@@ -85,5 +80,5 @@ app.put('api/workouts/:id', (req, res) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`App is listening on port ${PORT}`);
+    console.log(`App listening on port ${PORT}`);
 });
