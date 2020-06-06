@@ -1,3 +1,5 @@
+// get all workout data from back-end
+
 fetch("/api/workouts/range")
   .then(response => {
     return response.json();
@@ -192,7 +194,7 @@ function duration(data) {
       durations.push(exercise.duration);
     });
   });
-
+  console.log('durations', durations)
   return durations;
 }
 
