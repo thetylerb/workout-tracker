@@ -1,6 +1,6 @@
 # workout-tracker
-![stats](/images/stats.png)
-![workout](/images/workout.png)
+![stats](https://i.imgur.com/xq0nYwR.png)
+![workout](https://i.imgur.com/1K3Ej6y.png)
 
 # Table of Contents
 
