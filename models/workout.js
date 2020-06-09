@@ -7,11 +7,7 @@ const workoutSchema = new Schema({
     exercises: [exerciseModel.Schema]
 });
 
-// workoutSchema.virtual('totalDuration').get(function() {
-//     return this.exercises.reduce((total, exercises) => {
-//         return total + exercises.duration;
-//     }, 0);
-// });
+
 
 const Workout = mongoose.model('Workout', workoutSchema);
 
