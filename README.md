@@ -1,4 +1,6 @@
 # workout-tracker
+![stats](/images/stats.png)
+![workout](/images/workout.png)
 
 # Table of Contents
 
