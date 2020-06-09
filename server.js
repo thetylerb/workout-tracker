@@ -68,7 +68,7 @@ app.post("/api/workouts", ({ body }, res)=> {
     });
 });
 
-app.put('api/workouts/:id', (req, res) => {
+app.put('/api/workouts/:id', (req, res) => {
     let data = req.body;
     db.Workout.update(
         {_id: req.params.id},
